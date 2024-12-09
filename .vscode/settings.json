@@ -1,0 +1,184 @@
+{
+  // Copilot Workspace Settings
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "github.copilot.chat.codeGeneration.instructionFiles": [
+    {
+      "file": "tsconfig.json",
+      "line": [
+        32,
+        55
+      ]
+    },
+    {
+      "file": ".vscode/settings.json",
+      "line": "all"
+    },
+    {
+      "file": "README.md",
+      "line": "all"
+    },
+    {
+      "file": "cosmos/alexandria/copilot-prompts/vscode-copilot-creative.txt",
+      "line": "all"
+    },
+    {
+      "directory": "cosmos/alexandria",
+      "line": "all"
+    }
+  ],
+  "github.copilot.chat.edits.enabled": true,
+  "github.copilot.advancedMode": true,
+  "github.copilot.chat.followUps": "always",
+  "github.copilot.chat.codeGeneration.enabled": true,
+  "github.copilot.chat.inlineChatHint.enabled": true,
+  "github.copilot.chat.runCommand.enabled": true,
+  "github.copilot.chat.runCommand.command": {
+    "bake": "find . -name 'index.{tj}s' -exec bun {} \\;"
+  },
+  "github.copilot.chat.reviewSelection.enabled": true,
+  "github.copilot.chat.reviewSelection.instructions": [
+    {
+      "file": "cosmos/alexandria/copilot-prompts/vscode-copilot-reviews.md"
+    },
+    {
+      "text": "Check for comments labelled with TODO, BUG, FIXME, or HACK."
+    }
+  ],
+  // Formatting
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
+  "editor.defaultFormatter": "GitHub.copilot",
+  "editor.indentSize": 2,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.wordWrap": "off",
+  "editor.wordWrapColumn": 255,
+  "editor.rulers": [
+    128,
+    255
+  ],
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "editor.renderLineHighlight": "all",
+  "editor.snippets.codeActions.enabled": true,
+  "editor.snippetSuggestions": "top",
+  "editor.suggestSelection": "first",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.suggest.showKeywords": true,
+  "editor.suggest.showSnippets": true,
+  "editor.suggest.showClasses": true,
+  "editor.suggest.showMethods": true,
+  "editor.suggest.showFunctions": true,
+  "editor.suggest.showConstructors": true,
+  "editor.suggest.showVariables": true,
+  "editor.suggest.showConstants": true,
+  "editor.suggest.showModules": true,
+  "editor.suggest.showProperties": true,
+  "editor.suggest.showEvents": true,
+  "editor.suggest.showOperators": true,
+  "editor.suggest.showStructs": true,
+  "editor.suggest.showEnums": true,
+  "editor.suggest.showInterfaces": true,
+  "editor.suggest.showFields": true,
+  // Ruby
+  "ruby.linter.run": "off",
+  "ruby.linter": "none",
+  // TypeScript
+  "typescript.tsserver.log": "verbose",
+  "typescript.tsserver.experimental.syntaxFolding": true,
+  "typescript.format.semicolons": "remove",
+  "typescript.format.insertSpaceAfterCommaDelimiter": true,
+  "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterNames.includeInFunctionSignature": "all",
+  // JavaScript
+  "javascript.format.semicolons": "remove",
+  "javascript.format.insertSpaceAfterCommaDelimiter": true,
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+  "javascript.inlayHints.parameterTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterNames.includeInFunctionSignature": "all",
+  "javascript.suggest.names": true,
+  "javascript.suggest.paths": true,
+  "javascript.suggest.autoImports": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "javascript.suggest.completeJSDocs": true,
+  // JSON
+  "json.format.enable": true,
+  "json.format.insertSpaces": true,
+  "json.format.indent": 2,
+  "json.format.preserveObjectSize": true,
+  "json.format.preserveArraySize": true,
+  "json.format.preserveNewLines": true,
+  "json.format.preserveNewLinesInObjects": true,
+  "json.format.preserveNewLinesInArrays": true,
+  // YAML
+  "yaml.format.enable": true,
+  "yaml.format.singleQuote": true,
+  "yaml.format.bracketSpacing": true,
+  "yaml.format.printWidth": 255,
+  "yaml.format.proseWrap": "preserve",
+  "yaml.format.tabWidth": 2,
+  "yaml.format.useTabs": false,
+  "yaml.format.insertSpaces": true,
+  "yaml.format.indent": 2,
+  "yaml.format.preserveObjectSize": true,
+  "yaml.format.preserveArraySize": true,
+  "yaml.format.preserveNewLines": true,
+  "yaml.format.preserveNewLinesInObjects": true,
+  "yaml.format.preserveNewLinesInArrays": true,
+  // Markdown
+  "markdown.format.enable": true,
+  "markdown.format.indent": 2,
+  "markdown.format.preserveObjectSize": true,
+  "markdown.format.preserveArraySize": true,
+  "markdown.format.preserveNewLines": true,
+  "markdown.format.preserveNewLinesInObjects": true,
+  "markdown.format.preserveNewLinesInArrays": true,
+  "markdown.format.listIndent": 2,
+  "markdown.format.wrap": "preserve",
+  "markdown.format.proseWrap": "preserve",
+  "markdown.format.singleQuote": true,
+  "markdown.format.bracketSpacing": true,
+  "markdown.format.printWidth": 255,
+  "markdown.format.tabWidth": 2,
+  "markdown.format.useTabs": false,
+  "markdown.format.insertSpaces": true,
+  // Perl
+  "perl.linter.run": "off",
+  "perl.linter": "none",
+  "perl.logLevel": 2,
+  // Postgresql
+  "postgresql.linter.run": "on",
+  "postgresql.linter": "pglint",
+  "postgresql.logLevel": 2,
+  "postgresql.format.enable": true,
+  "postgresql.format.insertSpaces": true,
+  "postgresql.format.indent": 2,
+  "postgresql.format.preserveObjectSize": true,
+  "postgresql.format.preserveArraySize": true,
+  "vscode-postgres.showExplorer": true,
+  "vscode-postgres.showExplorerOnStartup": true,
+  "vscode-postgres.showExplorerOnConnect": true,
+  "vscode-postgres.showExplorerOnDisconnect": true,
+  "vscode-postgres.showExplorerOnClose": true,
+  "vscode-postgres.showExplorerOnExit": true,
+  "vscode-postgres.showExplorerOnSave": true,
+  "vscode-postgres.showExplorerOnSaveAll": true,
+  "vscode-postgres.showExplorerOnOpen": true,
+  // SQLite
+  "sqlite.linter.run": "on",
+  "sqlite.linter": "sqlitelinter",
+  "sqlite.logLevel": 2,
+  "sqlite.format.enable": true,
+  "sqlite.format.insertSpaces": true,
+  "sqlite.format.indent": 2,
+  "sqlite.format.preserveObjectSize": true,
+  "sqlite.format.preserveArraySize": true,
+  "vscode-sqlite.showExplorer": true,
+  "vscode-sqlite.showExplorerOnStartup": true,
+  "sqlite3-editor.codeLens.hideExecuteAndSelectButtons": false,
+}

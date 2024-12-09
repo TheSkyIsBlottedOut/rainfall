@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    // Enable latest features
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "checkJs": true,
+
+    // Bundler mode
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    "allowArbitraryModuleTypes": true,
+    "allowArbitraryExtensions": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+
+    // Okay practices
+    "strict": false,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
+    // Some stricter flags (disabled by default)
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "paths": {
+      "@ws/*": ["cosmos/*"],
+      "@ws": ["cosmos"],
+      "@web/*": ["cosmos/web/*"],
+      "@titan/*": ["cosmos/titan/*"],
+      "@alexandria/*": ["cosmos/alexandria/*"],
+      "@apps/*": ["cosmos/apps/*"],
+      "@bots/*": ["cosmos/bots/*"],
+      "@components/*": ["cosmos/components/*"],
+      "@etc/*": ["cosmos/etc/*"],
+      "@config/*": ["cosmos/etc/*"],
+      "@fn/*": ["cosmos/fn/*"],
+      "@libs/*": ["cosmos/libs/*"],
+      "@utils/*": ["cosmos/utils/*"],
+      "@types/*": ["cosmos/types/*"],
+      "@modules/*": ["cosmos/mod/*"],
+      "@mod/*": ["cosmos/mod/*"],
+      "@react/*": ["cosmos/react/*"],
+      "@svc/*": ["cosmos/svc/*"],
+      "@services/*": ["cosmos/svc/*"],
+      "@systems/*": ["cosmos/sys/*"],
+      "@sys/*": ["cosmos/sys/*"],
+      "@util/*": ["cosmos/util/*"]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+__error() {
+  echo "Error: $1"
+  exit 1
+}
+__quit() {
+  echo "$1"
+  exit 0
+}
+
+
+[[ -z "$1"]] && __error "Please add a workspace to switch to."
+[[ "$2" =~ ^list$ ]] && find -td "$Rainfall__Workspaces/*" -maxdepth 1 -type d -exec basename {} \; && exit 0
+
+find "$Rainfall__Workspaces" -maxdepth 1 -type d -name "$1" -exec cd {} \; && __quit "Switched to workspace $1." || __error "Workspace $1 not found."
+exit 0

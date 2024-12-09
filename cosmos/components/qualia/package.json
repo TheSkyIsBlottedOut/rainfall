@@ -1,0 +1,15 @@
+{
+  "name": "qualia",
+  "module": "index.ts",
+  "type": "module",
+  "package": "../../dist/libs",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
+    "react-component-template": "^0.1.10"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

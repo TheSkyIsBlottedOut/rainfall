@@ -1,0 +1,34 @@
+{
+  "name": "holistic-systems",
+  "module": "index.ts",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "workspaces": {
+    "libs": ["cosmos/libs/*"],
+    "workspaces": ["cosmos/apps/*"],
+    "tools": ["cosmos/util/*"],
+    "packages": ["cosmos/pkg/*"],
+    "extensions": ["cosmos/ext/*"],
+    "binaries": ["cosmos/bin/*"],
+    "services": ["cosmos/svc/*"],
+    "modules": ["cosmos/mod/*"],
+    "components": ["cosmos/components/*"],
+    "functions": ["cosmos/fn/*"],
+    "systems": ["cosmos/sys/*"],
+    "websites": ["cosmos/web/*"],
+    "workers": ["cosmos/bots/*"],
+    "docs": ["cosmos/alexandria/*"],
+    "projects": ["cosmos/titan/*"],
+    "config": ["cosmos/etc/*"],
+    "data": ["cosmos/db/*"],
+    "react": ["cosmos/react/*"]
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.2",
+    "react": "^19.0.0"
+  }
+}
