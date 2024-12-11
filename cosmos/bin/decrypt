@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+#- Decrypts a string encrypted with your prefs password.
+#- decrypt <encrypted_string>
+
+if [[ -z "$Rainfall__Password" ]]; then
+  echo "Error: No password found in environment variable Rainfall__Password."
+  exit 1
+fi
+openssl dec -aes-256-cbc -a -d -salt -pass pass:$Rainfall__Password <<< $1

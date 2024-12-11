@@ -1,0 +1,140 @@
+#!/usr/bin/env bun
+import { $ } from 'bun'
+
+I = Object.create(null)
+I.js = {
+  name: 'bun',
+  commands: {
+    add: 'bun add',
+    remove: 'bun remove',
+    install: 'bun install',
+    update: 'bun update',
+    upgrade: 'bun upgrade',
+    list: 'bun list',
+    search: 'bun search ?',
+    help: 'bun help'
+  }
+}
+I.system = {}
+if ($`command -v apt`) {
+  I.system.name = 'apt'
+  I.system.commands = {
+    install: 'apt install',
+    update: 'apt update',
+    upgrade: 'apt upgrade',
+    remove: 'apt remove'
+  }
+}
+
+if ($`command -v brew`) {
+  I.system.name = 'brew'
+  I.system.commands = {
+    install: 'brew install',
+    update: 'brew update',
+    upgrade: 'brew upgrade',
+    remove: 'brew remove'
+  }
+}
+
+if ($`command -v pacman`) {
+  I.system.name = 'pacman'
+  I.system.commands = {
+    install: 'pacman -S',
+    update: 'pacman -Sy',
+    upgrade: 'pacman -Syu',
+    remove: 'pacman -R'
+  }
+}
+
+if ($`command -v winget`) {
+  I.system.name = 'winget'
+  I.system.commands = {
+    install: 'winget install',
+    update: 'winget update',
+    upgrade: 'winget upgrade',
+    remove: 'winget uninstall'
+  }
+}
+
+if ($`command -v pip3 || command -v pip`) {
+  I.python.name = 'pip'
+  I.python.commands = {
+    install: 'pip install',
+    update: 'pip update',
+    upgrade: 'pip upgrade',
+    remove: 'pip remove'
+  }
+}
+
+if ($`command -v npm`) {
+  I.node.name = 'npm'
+  I.node.commands = {
+    install: 'npm install',
+    update: 'npm update',
+    upgrade: 'npm upgrade',
+    remove: 'npm remove'
+  }
+}
+
+if ($`command -v yarn`) {
+  I.node.name = 'yarn'
+  I.node.commands = {
+    install: 'yarn add',
+    update: 'yarn upgrade',
+    upgrade: 'yarn upgrade',
+    remove: 'yarn remove'
+  }
+}
+
+if ($`command -v gem`) {
+  I.ruby.name = 'gem'
+  I.ruby.commands = {
+    install: 'gem install',
+    update: 'gem update',
+    upgrade: 'gem upgrade',
+    remove: 'gem remove'
+  }
+}
+
+if ($`command -v bundle`) {
+  I.ruby.name = 'bundle'
+  I.ruby.commands = {
+    install: 'bundle install',
+    update: 'bundle update',
+    upgrade: 'bundle upgrade',
+    remove: 'bundle remove'
+  }
+}
+
+if ($`command -v cargo`) {
+  I.rust.name = 'cargo'
+  I.rust.commands = {
+    install: 'cargo install',
+    update: 'cargo update',
+    upgrade: 'cargo upgrade',
+    remove: 'cargo uninstall'
+  }
+}
+
+if ($`command -v go`) {
+  I.go.name = 'go'
+  I.go.commands = {
+    install: 'go install',
+    update: 'go update',
+    upgrade: 'go upgrade',
+    remove: 'go remove'
+  }
+}
+if (process.env.ARGV.includes('show')) {
+  Object.keys(I).forEach((key) => {
+    console.log(`\n${key.toUpperCase()}\t${I[key].name}`)
+  })
+} else if (process.env.ARGV.includes('install')) {
+  const install_find_instance = process.env.ARGV.indexOf('install')
+  const type_of_installer = process.env.ARGV[install_find_instance - 1]
+  const thing_to_install = process.env.ARGV[install_find_instance + 1]
+  console.log(`\n${I[type_of_installer].commands.install} ${thing_to_install}`)
+}
+
+const Installers = I
+export { Installers }

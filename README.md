@@ -1,19 +1,14 @@
 # rainfall
 
-This is a monorepo for Holistic Systems' website and
-the development of future programs.
+This is a monorepo for using Bun workspaces for multiple upcoming projects; this is the base structure, which may gain a few toolkits as its predecssor, the Versatile Platforms Starter Kit did.
 
-For the meaning of the name, please read the memorial.
 
 ## Usage
 
-In the beginning was the the word, and the word was with God, and the word was God.
+Just write stuff. I have no idea if I'll need a 'react' workspace separate from web. The patterns that work appear to be:
 
-And then God said, let there be light.
-
-We in the light of God are trying to build the tools that will improve the lives of people in as many ways as possible.
-
-Encryption as a non-intrusive default. Modular software and a seamless integration. A foundation for testing the craziest ideas.
+* DB: Keep Sqlite or LMDB here, and a subfolder for schemas and migrations.
+* Titan: For when a crazy rust idea hits.
 
 ### Usage
 
@@ -27,9 +22,7 @@ Workspaces are built in subfolders of cosmos. There are (too many) kinds:
 
 * `cosmos/web/...` - Websites, likely React, for Holistic Systems and its projects.
 
-* `cosmos/libs/...` - Libraries that are used by other modules.
-Remember, to share across workspaces in bun, the package.json must include a dependency `"@rainfall/libs": "file:../libs"`.
-This is because the package.json is copied to the build directory, and the symlink is not.
+* `cosmos/libs/...` - Libraries that are used by other modules.Remember, to share across workspaces in bun, the package.json must include a dependency `"@rainfall/libs": "file:../libs"`. This is because the package.json is copied to the build directory, and the symlink is not.
 
 * `cosmos/apps/...` - Applications that are standalone, but not websites. React Native, Neutralino, Rust, etc. These are 'workspaces', in the node sense, so build anything here.
 
@@ -87,7 +80,7 @@ We're here to make great things and share code without stepping on each other's 
 * Install the vscode extension that lets you add `project://` links to other files.
 * Put a readme everywhere.
 * Logs go into a file in the root log directory named after the workspace. You should pass loggers to shared libraries. For instance, project "metrix" would log to `logs/metrix.YYMMDD.log`.
-* Environment variables in .envrc use Rainfall__VarName as a default. Library functions for zsh sharing are written as __fn() or __rainfall_fn(). Zsh is preferential because of how it shares libraries.
+* Environment variables in .envrc use `Rainfall__VarName` as a default. Library functions for zsh sharing are written as `__fn()` or `__rainfall_fn()`. Zsh is preferential because of how it shares libraries.
 * Prefer bun to node; prefer postgres or sqlite to mysql; prefer rust to c++; use either ruby or python; use rust or crystal for compiled; use go if you can; use zsh for scripting (except install scripts for docker, where you should use sh and shellcheck).
 * Please use homebrew on your mac.
 * Prefer encrypted JSON for configuration files. Reason: Javascript, Ruby, Python, and Crystal have stdlib support. Ruby can use YAML internally. Rust can and should prefer toml. If you need to convert, use yq for it. For example, xml to json is `cat my.xml | yq -px -oj . > my.json`.

@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+#- Calls log functions with args.
+#- Usage: log <level> <event> <message>
+#- Example: log info "script.start" "Starting the script..."
+fpath=($Rainfall__Workspaces/fn/zsh $fpath)
+# If this works, it should go into the .envrc
+autoload -Uz logging && logging
+__log "$@"
+exit 0

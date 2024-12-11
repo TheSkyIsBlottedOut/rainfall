@@ -1,0 +1,25 @@
+#!/usr/bin/env zsh
+#- Encrypts a string using a password, which is in your .envrc.
+#- If you haven't set one up, run `nosh env:encrypt --init mypassword`.
+fpath=($Rainfall__Workspaces/fn/zsh $fpath)
+autoload -Uz logging && logging
+
+if [[ "$2" == "--init" ]]; then
+  if [[ -z "$3" ]]; then
+    __log error "You must provide a password to initialize the encryption."
+    exit 1
+  fi
+  export NOSH__ENCRYPTION_PASSWORD="$3"
+  echo "#!/usr/bin/env zsh\nexport NOSH__ENCRYPTION_PASSWORD=\"$3\"" > $NOSH__DIR_PREFS/encryption.sh
+  chmod 755 $NOSH__DIR_PREFS/encryption.sh
+  __log info "Encryption password set to $NOSH__ENCRYPTION_PASSWORD."
+  exit 0
+else
+  if [[ -z "$NOSH__ENCRYPTION_PASSWORD" ]]; then
+    __log error "You must set an encryption password. Run 'nosh env:encrypt --init mypassword'."
+    exit 1
+  fi
+  echo -n "$1" | openssl enc -aes-256-cbc -a -salt -pass pass:$NOSH__ENCRYPTION_PASSWORD
+  exit 0
+fi
+exit 1
