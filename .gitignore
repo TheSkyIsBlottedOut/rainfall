@@ -11,7 +11,7 @@ logs/*
 report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # Runtime data
-
+.
 pids
 _.pid
 _.seed
@@ -165,3 +165,4 @@ dist
 
 # Finder (MacOS) folder config
 .DS_Store
+cosmos/alexandria/copilot-prompts/*

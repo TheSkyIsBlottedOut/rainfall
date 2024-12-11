@@ -14,4 +14,3 @@ In your package.json in another workspace:
     }
   }
   ```
-

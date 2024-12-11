@@ -1,9 +1,11 @@
 # Vintage Dogma Terms of Service v2.0.1 (2024.08.18, 2024-11-25)
 
 TL;DR: You are not allowed to use whatever this license is applied to.
-[License](https://gist.githubusercontent.com/TheSkyIsBlottedOut/ee11fa06ca4a76870c71ee6ca0adfeb7/raw/9630f00943db870c6823a04a2b7a8161c8cbbd88/TOS.VD.Keybase.md)
+
+"Vintage Dogma" is a trade name referring to Holistic Services and Solutions Inc.
 
 ## Primary Terms
+
 Go away. You are not allowed to use this service. [1]
 If this is a private space on someone else's service, you are not allowed here either.
 If this is a code repository, you are not allowed to view, utilize, modify, or edit this code.
@@ -16,6 +18,7 @@ If any part of this license is declared legally unenforceable, all other parts o
 NO MODIFICATION OF THIS SPECIFIC CLAUSE, NOR ANY ALTERATION OF THE CONTENT OF THIS LICENSE IN SUCH A WAY THAT IT CARRIES ANY MEANING THAT IS SIGNIFICANTLY DIFFERENT THAN THE ORIGINAL TEXT, SHALL BE ACCEPTED AS A VALID ALTERATION. IN ALL CASES EXCEPT FOR THE FOLLOWING EXCEPTIONS, YOU ARE NOT WELCOME HERE AND ARE IN VIOLATION OF CONTRACT.
 
 ### UNALTERABLE EXCEPTIONS:
+
 - Federal access and use in accordance with one of the following laws, acts, orders, or customs:
   - Executive Order 12333 (December 4 1981, [as amended](https://dpcld.defense.gov/Portals/49/Documents/Civil/eo-12333-2008.pdf))
   - Representative use in civil and criminal proceedings, congressional hearings, or statements made by all citizens and non-citizens, entities, intelligences, algorithms, machine generated content, or data (decrypted or human/machine readable) within or without the United States, all nations and sovereignties ruled by _Homo Sapiens_ or _any other life form_ EXCEPT for usage by the divine agents of the One True God of Moses, Abraham, Isaac, and Jesus Christ, over which this nor any other earthly law has any authority;
@@ -41,6 +44,6 @@ NO MODIFICATION OF THIS SPECIFIC CLAUSE, NOR ANY ALTERATION OF THE CONTENT OF TH
 - This is done expressly to protect these terms, in their role as "_defining_" the limitations of this contract, distinct from the terms of the specific work itself, which may be defined by the creator or by exceptions as defined within the unalterable clauses.
   - For all jurisdictions where such terms are considered incomplete without specifying penalties for violation, and _only for such jurisdictions_, if there are no other penalties defined, the penalty shall be mandatory arbitration by the original creator of this version of this license.
 
-[1] If you find yourself on a Vintage Dogma licensed service you must immediately disconnect and leave. Fuck off. "Fuck", in this case, means to go, to depart, to not intend to return, and "off" means away forever.
+[1] If you find yourself on a Holistic Services and Holdings / Vintage Dogma licensed service you must immediately disconnect and leave. Fuck off. "Fuck", in this case, means to go, to depart, to not intend to return, and "off" means away forever.
 
-Copyright 2024 Sekeol Kim and the organization "Vintage Dogma". All rights prohibited.
+Copyright 2024 Holistic Services and Holdings, Inc. All rights prohibited.
